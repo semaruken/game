@@ -1,0 +1,25 @@
+spring:
+  application.name: guess-world
+  jpa.show-sql: true
+  main.allow-bean-definition-overriding: true
+security.basic.enabled: false
+management.security.enabled: false
+#### APP SPECIFIC CONFIGURATION #####
+appname: What
+entity.packages.to.scan: com.word
+swagger.additional.packages: com.word
+#jwt.signkey.dev: 38f05526e1604fc2998b40488d462531
+
+###### SERVER CONFIGURATION ######
+server:
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: application/json
+  max-http-header-size: 128KB
+
+############# OAUTH2 ################
+#oauth2.clients:
+#  swagger.secret: hS]85BfH
+#  rest.secret: 8e8kLOfhuK
+
